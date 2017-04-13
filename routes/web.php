@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route for Sentinel
+Route::get('/login', 'AuthController@getLogin')->name('login');
+Route::post('/postLogin', 'AuthController@postLogin')->name('postlogin');
